@@ -21,7 +21,9 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <!-- google font -->
     <script>
         tailwind.config = {
@@ -38,7 +40,10 @@
                         footer_bg_color: 'rgb(171, 239, 95)',
                         view_details: 'rgba(171, 239, 95, 0.5)',
                         icons_color: 'rgb(171, 239, 95)',
-                        icons_colors: 'rgb(171, 239, 95)'
+                        icons_colors: 'rgb(171, 239, 95)',
+                    },
+                    fontFamily: {
+                        inter: 'Inter'
                     }
                 }
             }
@@ -46,8 +51,8 @@
     </script>
 </head>
 
-<body>
-    <header class="p-1 lg:p-0">
+<body class="font-inter">
+    <header class="p-1 lg:p-0 bg-[#f6f6f6]">
         <nav class="fixed w-full z-10">
             <div class="navbar lg:w-4/5 mx-auto">
                 <div class="navbar-start">
@@ -73,7 +78,8 @@
                         <button class="bg-footer_bg_color py-2 px-3 text-black font-bold rounded-full">Book
                             Consult
                             <span class="pl-1">
-                                <i class="fa-solid fa-arrow-up-long rotate-45 bg-black text-sm w-6 h-6 pt-0.5 text-white rounded-full"></i>
+                                <i
+                                    class="fa-solid fa-arrow-up-long rotate-45 bg-black text-sm w-6 h-6 pt-0.5 text-white rounded-full"></i>
                             </span>
                         </button>
                     </div>
@@ -100,14 +106,15 @@
                     <img src="./image/banner.png" alt="">
                 </div>
                 <div class="space-y-4">
-                    <h2 class="md:text-4xl text-2xl font-extrabold md:w-[700px] mx-auto w-full">A barn house of this
+                    <h2 class="lg:text-6xl md:text-5xl text-2xl font-bold lg:w-[980px]  mx-auto w-full">A barn
+                        house of this
                         design has a striking appearance</h2>
                     <p class="font-semibold opacity-75 lg:w-[1000px] md:w-[600px] md:mx-auto">The barn house captivates
                         with its
                         blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents,
                         and large windows that flood the space with natural light.</p>
                     <button
-                        class="py-2 px-4 rounded-full lg:w-[17%] w-full border border-icons_colors font-bold bg-view_details">View
+                        class="py-2 px-4 rounded-full lg:w-[18%] w-full border border-icons_colors font-bold bg-view_details">View
                         Details
                         <span>
                             <i class="fa-solid fa-arrow-up ml-2 rotate-45 bg-icons_color py-1.5 px-2 rounded-full"></i>
@@ -195,6 +202,90 @@
                         <i class="fa-solid fa-user-group"></i>
                         <h2 class="text-3xl font-extrabold">307+</h2>
                         <p class="font-semibold">Staff Members</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Explore our Latest works -->
+            <section class="lg:w-4/5 mx-auto my-10">
+                <div class="space-y-5 text-center">
+                    <div
+                        class="flex items-center justify-center mx-auto bg-view_details py-1.5 rounded-full lg:w-[24%] md:w-[34%] gap-2 font-semibold">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <p>Explore our Latest works</p>
+                    </div>
+                    <h2 class="lg:text-4xl text-2xl font-bold">Our Latest Portfolio</h2>
+                    <p class="lg:w-[650px] font-semibold opacity-75 mx-auto">The barn The barn house captivates with its
+                        blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                </div>
+                <!-- grid One -->
+                <div class="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-1 gap-5 mt-5">
+                    <div class="lg:col-span-4 md:col-span-4 border p-4 rounded-xl">
+                        <div class="flex gap-4 md:flex-row flex-col">
+                            <img class="w-full border-2 border-dashed md:h-52 lg:h-44" src="./image/img1.png" alt="">
+                            <div class="space-y-4">
+                                <h2 class="text-2xl font-bold">Commercial</h2>
+                                <p>The barn house captivates with its blend of rustic charm and modern. The barn house
+                                    captivates with its blend of rustic charm and modern.</p>
+                                <p class="font-bold">View Details
+                                    <span class="pl-1">
+                                        <i
+                                            class="fa-solid mr-1 rotate-45 bg-footer_bg_color text-sm w-6 h-6 pl-1.5 pt-0.5 text-black rounded-full  fa-arrow-up-long"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 border p-4 md:col-span-2 rounded-xl">
+                        <img class="w-full border-2 border-dashed md:h-52 lg:h-44" class="lg:w-full md:h-full" src="./image/img2.png" alt="">
+                    </div>
+                    <div class="lg:col-span-2 lg:hidden border p-4 md:col-span-2 rounded-xl">
+                        <img class="w-full border-2 border-dashed md:h-52 lg:h-44" class="md:h-48" src="./image/img5.png" alt="">
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-6 lg:hidden  md:grid-cols-4 grid-cols-1 gap-5 mt-5">
+                    <div class="lg:col-span-4 md:col-span-4 border p-4 rounded-xl">
+                        <div class="flex gap-4 md:flex-row flex-col">
+                            <img class="w-full border-2 border-dashed md:h-52 lg:h-44" src="./image/img4.png" alt="">
+                            <div class="space-y-5 mt-3">
+                                <h2 class="text-2xl font-bold">Commercial</h2>
+                                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                                <p class="font-bold">View Details
+                                    <span class="pl-1">
+                                        <i
+                                            class="fa-solid mr-1 rotate-45 bg-footer_bg_color text-sm w-6 h-6 pl-1.5 pt-0.5 text-black rounded-full  fa-arrow-up-long"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- medium grid -->
+                    <div class="lg:col-span-2  border p-4 md:col-span-2 rounded-xl">
+                        <img class="w-full border-2 border-dashed md:h-52 lg:h-44" class="w-full md:h-52" src="./image/img3.png" alt="">
+                    </div>
+                    <div class="lg:col-span-2 lg:hidden  border p-4 md:col-span-2 rounded-xl">
+                        <img class="w-full border-2 border-dashed md:h-52 lg:h-44" class="w-full  md:w-full md:h-52" src="./image/img5.png" alt="">
+                    </div>
+                </div>
+                <div class="lg:grid lg:grid-cols-4 hidden gap-4 mt-4">
+                    <div class="border rounded-xl p-4">
+                        <img class="w-full border-2 border-dashed md:h-52 lg:h-44" class="h-44" src="./image/img3.png" alt="">
+                    </div>
+                    <div class="flex border rounded-xl p-4 col-span-2 gap-4">
+                        <img class="w-full border-2 border-dashed md:h-52 lg:h-44" class="h-44" src="./image/img4.png" alt="">
+                        <div class="space-y-4">
+                            <h2 class="text-2xl font-bold">Commercial</h2>
+                            <p>The barn house captivates with its blend of rustic charm and modern. </p>
+                            <p class="font-bold">View Details
+                                <span class="pl-1">
+                                    <i
+                                        class="fa-solid mr-1 rotate-45 bg-footer_bg_color text-sm w-6 h-6 pl-1.5 pt-0.5 text-black rounded-full  fa-arrow-up-long"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border rounded-xl p-4">
+                        <img class="w-full border-2 border-dashed md:h-52 lg:h-44" class="h-44" src="./image/img5.png" alt="">
                     </div>
                 </div>
             </section>
@@ -352,7 +443,8 @@
                                 class="py-2.5 pl-4 rounded-full lg:w-[30%] w-full border-none outline-none">
                         </div>
                         <div class="flex flex-col space-y-4 lg:w-[660px] mx-auto">
-                            <textarea name=""  id="" placeholder="Write your message here" cols="76" class="rounded-3xl p-4 outline-none" rows="10"></textarea>
+                            <textarea name="" id="" placeholder="Write your message here" cols="76"
+                                class="rounded-3xl p-4 outline-none" rows="10"></textarea>
                             <button class="bg-icons_colors py-2 rounded-full font-bold">
                                 Send Mail
                                 <span>
@@ -371,7 +463,8 @@
         <div>
             <div class="space-y-10">
                 <div class="flex items-center gap-2 justify-center">
-                    <i class="fa-solid fa-arrow-up-long rotate-45 bg-footer_bg_color text-sm w-6 h-6 pt-0.5 text-black rounded-full"></i>
+                    <i
+                        class="fa-solid fa-arrow-up-long rotate-45 bg-footer_bg_color text-sm w-6 h-6 pt-0.5 text-black rounded-full"></i>
                     <h2 class="text-2xl font-bold">Rinterio</h2>
                 </div>
                 <p class="text-sm md:w-[550px] text-footer_p opacity-80 text-center mx-auto">The barn house captivates
@@ -389,7 +482,8 @@
                     class="bg-footer_bg_color lg:w-[15%] md:w-[24%] w-full py-2 px-5 text-black font-bold rounded-full">Book
                     Consult
                     <span class="pl-1">
-                        <i class="fa-solid fa-arrow-up-long rotate-45 bg-black text-sm w-6 h-6 pt-0.5 text-white rounded-full"></i>
+                        <i
+                            class="fa-solid fa-arrow-up-long rotate-45 bg-black text-sm w-6 h-6 pt-0.5 text-white rounded-full"></i>
                     </span>
                 </button>
             </div>
